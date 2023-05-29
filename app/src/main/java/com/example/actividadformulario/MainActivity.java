@@ -21,20 +21,21 @@ private ActivityMainBinding mBinding;
 
             //Enviar datos
         Intent passSecond = getIntent();
-        mBinding.name.setText();
-        mBinding.editApellido.setText();
-        mBinding.editCorreo.setText();
-        mBinding.textContraseA1.setText();
-        mBinding.textContraseA2.setText();
+        //Busco elementos
+        mBinding.EditName.getText().toString();
+        mBinding.EditApellido.getText().toString();
+        mBinding.EditCorreo.getText().toString();
+        mBinding.EditContraseA.getText().toString();
+        mBinding.EditReContraseA.getText().toString();
 
         mBinding.Enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name=mBinding.name.getText().toString();
-                String apellido=mBinding.editApellido.getText().toString();
-                String correo=mBinding.editCorreo.getText().toString();
-                String contrasela1=mBinding.textContraseA1.getText().toString();
-                String contrasela2=mBinding.textContraseA2.getText().toString();
+                String name=mBinding.EditName.getText().toString();
+                String apellido=mBinding.EditApellido.getText().toString();
+                String correo=mBinding.EditCorreo.getText().toString();
+                String contrasela1=mBinding.EditContraseA.getText().toString();
+                String contrasela2=mBinding.EditReContraseA.getText().toString();
                 Log.d("prueba",""+name+apellido);
                 Toast.makeText(MainActivity.this,"Hola"+name+" "+correo,Toast.LENGTH_SHORT).show();
                 passSecond(name,apellido,correo);

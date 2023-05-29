@@ -22,7 +22,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/name"
+            android:id="@+id/InputName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -31,6 +31,7 @@
             app:counterMaxLength="20">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditName"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />
@@ -39,7 +40,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/editApellido"
+            android:id="@+id/InputApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese Apellido"
@@ -47,6 +48,7 @@
             app:counterMaxLength="20">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditApellido"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />
@@ -55,7 +57,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
 
-            android:id="@+id/editCorreo"
+            android:id="@+id/InputCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese Correo"
@@ -63,6 +65,7 @@
             app:counterMaxLength="20">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditCorreo"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center" />
@@ -70,13 +73,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textContraseña1"
+            android:id="@+id/InputContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditContraseña"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -84,13 +88,14 @@
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textContraseña2"
+            android:id="@+id/inputReContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Repita contraseña"
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditReContraseña"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
