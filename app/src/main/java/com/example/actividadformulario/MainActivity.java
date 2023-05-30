@@ -36,8 +36,8 @@ private ActivityMainBinding mBinding;
                 String correo=mBinding.EditCorreo.getText().toString();
                 String contrasela1=mBinding.EditContraseA.getText().toString();
                 String contrasela2=mBinding.EditReContraseA.getText().toString();
-                Log.d("prueba",""+name+apellido);
-                Toast.makeText(MainActivity.this,"Hola"+name+" "+correo,Toast.LENGTH_SHORT).show();
+                Log.d("prueba"," "+name+apellido);
+                Toast.makeText(MainActivity.this,"Hola "+name+" "+correo,Toast.LENGTH_SHORT).show();
                 passSecond(name,apellido,correo);
             }
         });
@@ -45,6 +45,11 @@ private ActivityMainBinding mBinding;
     }
     private void passSecond(String name,String apellido, String correo){
             Intent passSecond= new Intent(MainActivity.this,MainActivity2.class);
+            Log.d("Prueba 2 ", " "+ name+" " +apellido);
+            passSecond.putExtra("Name", name);
+             passSecond.putExtra("Apellido", apellido);
+             passSecond.putExtra("Correo", correo);
 
+             startActivity(passSecond);
     }
 }
