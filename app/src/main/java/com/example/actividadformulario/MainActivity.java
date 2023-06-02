@@ -36,9 +36,27 @@ private ActivityMainBinding mBinding;
                 String correo=mBinding.EditCorreo.getText().toString();
                 String contrasela1=mBinding.EditContraseA.getText().toString();
                 String contrasela2=mBinding.EditReContraseA.getText().toString();
-                Log.d("prueba"," "+name+apellido);
-                Toast.makeText(MainActivity.this,"Hola "+name+" "+correo,Toast.LENGTH_SHORT).show();
-                passSecond(name,apellido,correo);
+
+                if(name.length()==0){
+                    Toast.makeText(MainActivity.this,"Debe ingresar un nombre",Toast.LENGTH_SHORT).show();
+                } else if (apellido.length()==0) {
+                    Toast.makeText(MainActivity.this,"Debe ingresar un apellido",Toast.LENGTH_SHORT).show();
+
+                }else if (correo.length()==0) {
+                    Toast.makeText(MainActivity.this,"Debe ingresar un correo",Toast.LENGTH_SHORT).show();
+
+                }else if (contrasela1.length()==0) {
+                    Toast.makeText(MainActivity.this,"Debe ingresar una contraseña",Toast.LENGTH_SHORT).show();
+
+                }else if (contrasela2.length()==0) {
+                    Toast.makeText(MainActivity.this,"Debe repetir contraseña",Toast.LENGTH_SHORT).show();
+
+                }else if (contrasela2!=contrasela1) {
+                    Toast.makeText(MainActivity.this,"Debe ingresar una contraseña correcta",Toast.LENGTH_SHORT).show();
+
+                }else{
+                    passSecond(name,apellido,correo);
+                }
             }
         });
 
