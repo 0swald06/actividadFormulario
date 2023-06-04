@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#32C828"
         android:orientation="vertical">
 
         <TextView
@@ -18,7 +19,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Formulario"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#7700FF" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/avatar" />
 
         <com.google.android.material.textfield.TextInputLayout
 
@@ -34,7 +42,8 @@
                 android:id="@+id/EditName"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:textColor="#7700FF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,7 +60,8 @@
                 android:id="@+id/EditApellido"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:textColor="#7700FF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,7 +78,8 @@
                 android:id="@+id/EditCorreo"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:textColor="#7700FF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,9 +95,11 @@
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="#7700FF" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputReContraseña"
             android:layout_width="match_parent"
@@ -99,7 +112,8 @@
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="#7700FF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
